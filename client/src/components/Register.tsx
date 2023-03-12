@@ -8,7 +8,7 @@ const Register = () => {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     try {
-      await axios.post("http://localhost:6000/auth/register", {
+      await axios.post("http://localhost:3001/auth/register", {
         username,
         password,
       });
@@ -32,7 +32,7 @@ const Register = () => {
           />
         </div>
         <div>
-          <label htmlFor="username">Password:</label>
+          <label htmlFor="password">Password:</label>
           <input
             type="password"
             name="password"
